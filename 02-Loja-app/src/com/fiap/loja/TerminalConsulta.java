@@ -36,7 +36,8 @@ public class TerminalConsulta {
 		log.debug("Caso o objeto retornado seja nulo, retorna-se um erro");
 		if(to == null){
 			log.error("Produto não registrado");
-		}else{log.debug("Caso seja encontrado uma entrada equivalente no banco, retorna-se o toString @Override do TO");
+		}else{
+			log.debug("Caso seja encontrado uma entrada equivalente no banco, retorna-se o toString @Override do TO");
 			System.out.println(to);	
 		}
 		
