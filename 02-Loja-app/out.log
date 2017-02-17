@@ -1,0 +1,14 @@
+2017-02-17 02:41:56 WARN  TerminalConsulta:21 - Application START
+2017-02-17 02:41:56 DEBUG TerminalConsulta:29 - Usuário insere o código do produto desejado:
+2017-02-17 02:42:03 DEBUG TerminalConsulta:34 - É consultado no banco a entry com o código indicado, armazenando-a em um TransferObject
+2017-02-17 02:42:03 DEBUG TerminalConsulta:36 - Caso o objeto retornado seja nulo, retorna-se um erro
+2017-02-17 02:42:03 DEBUG TerminalConsulta:39 - Caso seja encontrado uma entrada equivalente no banco, retorna-se o toString @Override do TO
+2017-02-17 02:42:03 WARN  TerminalConsulta:45 - Application END
+2017-02-17 02:42:47 WARN  TerminalConsulta:21 - Application START
+2017-02-17 02:42:47 DEBUG TerminalConsulta:29 - Usuário insere o código do produto desejado:
+2017-02-17 02:42:52 DEBUG TerminalConsulta:34 - É consultado no banco a entry com o código indicado, armazenando-a em um TransferObject
+2017-02-17 02:42:52 DEBUG TerminalConsulta:36 - Caso o objeto retornado seja nulo, retorna-se um erro
+2017-02-17 02:42:52 DEBUG TerminalConsulta:39 - Caso seja encontrado uma entrada equivalente no banco, retorna-se o toString @Override do TO
+2017-02-17 02:42:52 WARN  TerminalConsulta:45 - Application END
+2017-02-17 02:43:06 WARN  TerminalConsulta:21 - Application START
+2017-02-17 02:43:08 WARN  TerminalConsulta:45 - Application END
