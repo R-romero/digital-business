@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import com.fiap.TO.EstoqueTO;
 
+import br.com.fiap.bo.EstoqueBO;
 import br.com.fiap.config.PropertySingleton;
 
 
@@ -25,7 +26,12 @@ public class TerminalConsulta {
 		int codigo = sc.nextInt();
 		EstoqueBO estBo = new EstoqueBO();
 		EstoqueTO to = estBo.ConsultarProduto(codigo);
-		System.out.println(to);
+		if(to == null){
+			System.out.println("Produto não registrado!");
+		}else{
+			System.out.println(to);	
+		}
+		
 		
 		sc.close();
 	}

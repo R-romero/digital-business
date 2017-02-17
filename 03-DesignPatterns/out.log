@@ -1,0 +1,3 @@
+2017-02-16 22:34:28 TRACE PropertySingleton:18 - Recuperando as propriedades do sistema.
+2017-02-16 22:34:28 DEBUG PropertySingleton:20 - Instanciando o objeto de propriedades.
+2017-02-16 22:34:28 DEBUG PropertySingleton:22 - Carregando as propriedades.
