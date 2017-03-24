@@ -14,7 +14,7 @@ public class EstoqueBO {
 		banco = new HashMap<>();
 		banco.put(401, new Estoque(401, "Camiseta Masculina Manga Curta Branca", 12.50, 10));
 		banco.put(402, new Estoque(402, "Camiseta Masculina Manga Curta Rosa", 15.50, 7));
-	}
+	} 
 	
 	public Estoque ConsultarProduto(int codProduto) throws AxisFault{	
 			Estoque est = banco.get(codProduto);
