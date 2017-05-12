@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="_telinha.xhtml">
+		<ui:define name="corpo">
+				<h1>Lista de Especialidades</h1>
+			<h:messages errorClass="alert alert-danger"
+			infoClass="alert alert-success" />
+			
+		<h:dataTable value="#{listaEspecialidadeBean.especialidade}" var="c" styleClass="table">
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+				#{c.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Descrição</f:facet>
+				#{c.descricao}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Certificado</f:facet>
+				#{c.certificado}
+			</h:column>
+			<h:column>			
+				<h:form>
+					<h:commandButton styleClass="btn btn-info" action="especialidade" value="Alterar" >
+						<f:setPropertyActionListener value="#{c}" 
+							target="#{especialidadeBean.especialidade}" />
+					</h:commandButton>
+					<h:commandButton style="margin-left:10px;" styleClass="btn btn-danger"
+							action="#{listaEspecialidadeBean.excluir(c.codigo)}" value="Excluir" />
+				</h:form>
+			</h:column>
+		</h:dataTable>
+		</ui:define>
+	</ui:composition>
+</html>

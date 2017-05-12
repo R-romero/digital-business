@@ -9,8 +9,8 @@ import br.com.fiap.bo.ConsultorBO;
 import br.com.fiap.entity.Consultor;
 import br.com.fiap.exception.DBException;
 
-@ManagedBean
-public class ConsultorBean {
+@ManagedBean 
+public class ConsultorBean { 
 
 	private Consultor consultor;
 	

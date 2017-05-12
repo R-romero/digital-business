@@ -4,13 +4,9 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"> 
 
-<h:head>
-	<title>Lista de Consultores</title>
-	<h:outputStylesheet library="css" name="bootstrap.min.css"/>
-</h:head> 
-<body> 
-<div class="container">
-	<h1>Lista de Consultores</h1>
+<ui:composition template="_telinha.xhtml">
+	<ui:define name="corpo">
+		<h1>Lista de Consultores</h1>
 	<h:messages errorClass="alert alert-danger"
 				infoClass="alert alert-success" />
 	<h:dataTable value="#{listaConsultorBean.consultores}" var="c" styleClass="table">
@@ -37,8 +33,8 @@
 			</h:form>
 		</h:column>
 	</h:dataTable>
-</div>
-</body> 
+	</ui:define>
+</ui:composition> 
 </html>
 
 
